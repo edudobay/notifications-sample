@@ -1,5 +1,6 @@
 var gulp = require("gulp");
 var slim = require("gulp-slim");
+var sass = require("gulp-sass");
 
 gulp.task('slim', function() {
     return gulp.src("html/**/*.slim")
@@ -7,7 +8,14 @@ gulp.task('slim', function() {
       .pipe(gulp.dest("public/"));
 });
 
+gulp.task('sass', function() {
+    return gulp.src('css/**/*.sass')
+      .pipe(sass())
+      .pipe(gulp.dest('public/css'));
+});
+
 gulp.task('watch', function() {
     gulp.watch('html/**/*.slim', ['slim']);
+    gulp.watch('css/**/*.sass', ['sass']);
 });
 
