@@ -1,2 +1,7 @@
 node_modules/
 .sass-cache/
+
+public/**/*.html
+public/js/
+public/css/
+
