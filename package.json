@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webserver": "browser-sync start --server public --files public"
+    "webserver": "browser-sync start --server public --files public",
+    "webpack": "webpack",
+    "watch": "gulp watch"
   },
   "author": "Eduardo Dobay <edudobay@gmail.com>",
   "license": "GPL-3.0",
