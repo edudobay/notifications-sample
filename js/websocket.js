@@ -5,7 +5,7 @@ function sendJSON(obj) {
 }
 
 const socketAccessor = {
-    sendEvent: (name) => sendJSON({type: 'event', name: name}),
+    sendEvent: (name, params) => sendJSON({type: 'event', name, params}),
 
     onopen:    (callback) => socket.onopen = callback,
     onmessage: (callback) => socket.onmessage = callback,

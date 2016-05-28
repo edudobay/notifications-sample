@@ -19,8 +19,10 @@ function main() {
     const p = $('<p>hello world</p>');
     const counter = { times: 0 };
     p.appendTo('#content')
-        .on('click', () =>
-            toastr.info(`This paragraph has been clicked ${++counter.times} times`));
+        .on('click', () => {
+            toastr.info(`This paragraph has been clicked ${++counter.times} times`);
+            socket.sendEvent('click', {times: counter.times});
+        });
 }
 
 $(main);
