@@ -23,6 +23,7 @@
     "gulp-sass": "^2.3.1",
     "gulp-slim": "^0.3.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-stream": "^3.2.0"
   }
 }
