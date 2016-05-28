@@ -13,8 +13,12 @@
     "toastr": "^2.1.2"
   },
   "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1",
-    "gulp-slim": "^0.3.0"
+    "gulp-slim": "^0.3.0",
+    "webpack": "^1.13.1"
   }
 }
